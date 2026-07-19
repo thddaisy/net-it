@@ -30,6 +30,7 @@
 
       <main class="main-content">
         <header class="topbar">
+          <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation">☰</button>
           <div class="breadcrumb"><span>Workspace</span><b>/</b><strong id="viewTitle">My board</strong></div>
           <div class="top-actions"><button class="icon-btn" aria-label="Notifications">♧<i></i></button><button class="help-btn">?</button><button class="user-menu"><span class="avatar small">SK</span> Sam <span>⌄</span></button></div>
         </header>
@@ -41,14 +42,14 @@
         </section>
 
         <section class="page page-board" id="boardView">
-          <div class="hero-row"><div><p class="eyebrow">SUNDAY, 19 JULY 2026</p><h1>Good morning, Sam <span>✦</span></h1><p class="subhead">Keep the good conversations going.</p></div><button class="primary-btn" id="addMeetupBtn"><span>＋</span> Log a meetup</button></div>
+          <div class="hero-row"><div><p class="eyebrow">SUNDAY, 19 JULY 2026</p><h1>Good morning, Sam <span>✦</span></h1><p class="subhead">Keep the good conversations going.</p></div><button class="primary-btn" id="addMeetupBtn"><span>＋</span> Record a meetup</button></div>
 
           <input id="topicInput" type="hidden" /><button id="generateBtn" hidden></button><button id="reviewBtn" hidden></button>
           <div class="section-heading"><div><h2>Your networking board <span class="count-pill" id="noteCount">6</span></h2><p>Small notes, big memory.</p></div><div class="board-actions"><button class="filter-btn">All time <span>⌄</span></button><button class="sort-btn">Newest first <span>↕</span></button></div></div>
           <div class="notes-grid" id="notesGrid"></div>
         </section>
 
-        <section class="page" id="upcomingView"><div class="page-intro"><p class="eyebrow">LOOKING AHEAD</p><h1>Upcoming <span>◷</span></h1><p class="subhead">Arrive with context, leave with a connection.</p></div><div class="upcoming-card"><div class="date-block"><strong>24</strong><span>JUL<br />FRI</span></div><div><p class="eyebrow">IN 5 DAYS</p><h2>Product people &amp; AI</h2><p>GridAKL · 6:30 PM</p></div><button class="outline-btn" id="upcomingReview">Review connections →</button></div><div class="empty-soft"><span>＋</span><h2>Planning another event?</h2><p>Log it here and we'll remind you what matters before you arrive.</p><button class="text-btn" id="addUpcomingBtn">Add an upcoming meetup →</button></div></section>
+        <section class="page" id="upcomingView"><div class="page-intro"><p class="eyebrow">LOOKING AHEAD</p><h1>Upcoming <span>◷</span></h1><p class="subhead">Arrive with context, leave with a connection.</p></div><div class="upcoming-card"><div class="date-block"><strong>24</strong><span>JUL<br />FRI</span></div><div><p class="eyebrow">IN 5 DAYS</p><h2>Product people &amp; AI</h2><p>GridAKL · 6:30 PM</p></div><button class="outline-btn" id="upcomingReview">Review connections →</button></div><div class="empty-soft"><span>＋</span><h2>Planning another event?</h2><p>Record another event here and we'll remind you what matters before you arrive.</p><button class="text-btn" id="addUpcomingBtn">Record an upcoming meetup →</button></div></section>
 
         <section class="page" id="insightsView"><div class="page-intro"><p class="eyebrow">A LITTLE LOOK BACK</p><h1>Your progress <span>↗</span></h1><p class="subhead">The more you show up, the easier it gets.</p></div><div class="insight-layout"><article class="achievement-card"><p class="eyebrow">JULY 2026</p><h2>You're building<br />something good.</h2><div class="achievement-stats"><div><strong id="insightMeetups">4</strong><span>meetups</span></div><div><strong id="insightPeople">18</strong><span>people met</span></div></div><p class="achievement-foot">That's <b>5 more people</b> than last month. 🚀</p><button class="primary-btn" id="shareBtn">Share achievement <span>↗</span></button></article><article class="chart-card"><div class="card-header"><div><p class="eyebrow">MONTHLY MOMENTUM</p><h2>Show up, stack connections.</h2></div><span class="chart-legend">● People met</span></div><div class="chart"><div class="y-labels"><span>20</span><span>10</span><span>0</span></div><div class="bars"><div style="--h:38%"><span>May</span></div><div style="--h:62%"><span>Jun</span></div><div class="current" style="--h:90%"><span>Jul</span></div><div class="future" style="--h:18%"><span>Aug</span></div></div></div></article></div></section>
         <section class="page" id="peopleView"><div class="page-intro people-intro"><div><p class="eyebrow">PEOPLE I WANT TO REMEMBER</p><h1>People <span>♧</span></h1><p class="subhead">Names fade. A few good keywords help them stay.</p></div><button class="primary-btn" id="addPersonBtn">＋ Add person</button></div><div class="people-grid" id="peopleGrid"></div></section>
